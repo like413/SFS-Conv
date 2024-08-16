@@ -7,6 +7,12 @@ Deep Convolutional Neural Networks (DCNNs) have achieved remarkable performance 
 ## SFS-Conv Framework
 ![SFS-Conv](https://github.com/like413/SFS-Conv/blob/main/fig/SFS-Conv.png)
 The proposed SFS-Conv module is specially designed for SAR object detection, which consists of three units, a spatial perception unit (SPU), a frequency perception unit (FPU), and a channel selection unit (CSU).
+### FPU for Frequency Analysis
+![FPU](https://github.com/like413/SFS-Conv/blob/main/fig/FPU.png)
+In SAR scenes, objects typically exhibit characteristics across multiple scales and orientations, making traditional convolution kernels potentially inflexible in feature extraction and leading to feature redundancy. For example, in a scenario where an object undergoes rotation, features extracted by traditional convolution kernels may struggle to adapt to the new direction, necessitating more kernels to cover features in different directions. This transformation guides convolution kernels in extracting high-frequency texture features at multiple scales and orientations, effectively suppressing speckle noise in SAR images.
+### SPU for Spatial Context Representation
+![SPU](https://github.com/like413/SFS-Conv/blob/main/fig/SPU.png)
+Since SAR images are typically captured at high resolutions from an overhead perspective, which is challenging to identify objects based on appearance alone. Instead, surrounding environment of objects can offer valuable cues for recognition, such as object shape, orientation, and other characteristics. Specifically, we first partition the feature map channels, and then adopt multiple kernels of different sizes to obtain multi-scale features. In addition, we construct hierarchical residual connections between kernels to further expand the receptive field for each convolution layer.
 
 ## Performance Comparison
 ### Comparison with the SOTA methods for SFS-CNet on HRSID

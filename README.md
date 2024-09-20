@@ -28,12 +28,11 @@ Comparison of SFS-CNet and SoTA methods on **SAR-AIRcraft-1.0** data set. The be
 If you found this code useful, please cite the paper. Welcome 👍Fork and Star👍, then I will let you know when we update.
 
 ```
-@InProceedings{Li_2024_CVPR,
-    author    = {Li, Ke and Wang, Di and Hu, Zhangyuan and Zhu, Wenxuan and Li, Shaofeng and Wang, Quan},
-    title     = {Unleashing Channel Potential: Space-Frequency Selection Convolution for SAR Object Detection},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2024},
-    pages     = {17323-17332}
-}
+@INPROCEEDINGS{10656163,
+  author={Li, Ke and Wang, Di and Hu, Zhangyuan and Zhu, Wenxuan and Li, Shaofeng and Wang, Quan},
+  booktitle={2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+  title={Unleashing Channel Potential: Space-Frequency Selection Convolution for SAR Object Detection}, 
+  year={2024},
+  pages={17323-17332},
+  doi={10.1109/CVPR52733.2024.01640}}
 ```
